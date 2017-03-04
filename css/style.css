@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*HEADER*/
+
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-weight: 600;
+}
+.container {
+    width: 1063px;
+    margin: 0 auto;
+}
+.logo {
+    height: 12px;
+    float: left;
+    font-size: 15px;
+}
+.logo strong {
+    color: #24BA9F;
+}
+/*NAVBAR*/
+
+nav {
+    float: right;
+    font-size: 14px;
+}
+nav ul {
+    text-transform: uppercase;
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0px 10px 0 25px;
+    letter-spacing: 1px;
+}
+.half {
+    float: left;
+    width: 50%;
+}
+/*MAIN SECTION*/
+
+#main {
+    width: 100%;
+    height: 500px;
+    background: -webkit-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(207, 206, 211) 100%);
+    background: -o-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(207, 206, 211) 100%);
+    background: -ms-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(207, 206, 211) 100%);
+    background: -moz-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(207, 206, 211) 100%);
+    background: linear-gradient(to bottom, rgb(247, 247, 247) 0%, rgb(207, 206, 211) 100%);
+}
+.ten {
+    width: 5%;
+    height: 400px;
+    float: left;
+    color: #24BA9F;
+    font-size: 75px;
+    font-weight: 300;
+    padding-top: 200px;
+}
+.fourty {
+    width: 45%;
+    float: left;
+}
+.fourty img {
+    width: 390px;
+    padding: 97px 0 0px 13px;
+}
+.fourty h1 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+.fourty p {
+    font-size: 14px;
+    color: black;
+    padding: 0 40px 25px 40px;
+    line-height: 2em;
+    font-weight: 300;
+}
+.fourty strong {
+    color: #24BA9F;
+}
+.fourty a {
+    text-decoration: none;
+    width: 70px;
+    padding: 10px;
+    color: white;
+    background-color: #24BA9F;
+    border-radius: 10px;
+}
+.right {
+    text-align: right;
+    padding-right: 9px;
+}
+/*PRODUCTS*/
