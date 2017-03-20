@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sit on our chair</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,12 +13,20 @@
     <header>
         <div class="container row">
             <p class="logo">
-                SIT<strong> ON </strong>CHAIR</p>
+                SIT<span> ON </span>CHAIR</p>
             <nav>
                 <ul class="menu">
-                    <li>o firmie</li>
-                    <li>galeria</li>
-                    <li>kontakt</li>
+                    <div class="dropdown">
+                    <li>O FIRMIE
+                      <ul class="inner_menu">
+                        <li>Aktualności</li>
+                        <li>Nasz team</li>
+                        <li>Historia</li>
+                      </ul>
+                    </div>
+                    </li>
+                    <li>GALERIA</li>
+                    <li>KONTAKT</li>
                 </ul>
             </nav>
         </div>
@@ -30,7 +38,7 @@
             <div class="fourty">
                 <img src="images/black_chair_2.png">
             </div>
-            <div class="fourty">
+            <div class="fourty center">
                 <h1>SIT <strong>ON</strong> OUR <strong>CHAIR</strong></h1>
                 <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
                 <a href="#">ZOBACZ WIĘCEJ</a>
@@ -40,15 +48,112 @@
     </section>
 
     <section id="products">
+        <div class="container row">
+            <div class="box clair float_left">
+                <h2>Chair CLAIR</h2>
+            </div>
+            <div class="box margarita float_left">
+                <h2>Chair MARGARITA</h2>
+            </div>
+            <div class="box describe float_right">
+                <h2>Finds all inputs</h2>
+                <p>Finds all inputs that are not checked and hihgliths next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.
+                    <br>
+                    <br>Notice there is no change when clicking the checkboxes since no click events have been linked.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section id="prices">
+        <div class="container row">
+            <h3 class="section_title">CENNIK</h3>
+            <!--BASIC PLAN-->
+            <div class="plan float_left">
+                <h4>BASIC PLAN</h4>
+                <div class="price">
+                    <p>85</p>
+                    <p class="small up">99</p>
+                    <p class="small">PLN/MSC</p>
+                </div>
+                <p>Zakup towaru + dowóz</p>
+                <p>Serwis</p>
+                <a href="#">DOŁĄCZ</a>
+            </div>
+            <!--STANDARD PLAN-->
+            <div class="plan middle float_left">
+                <h4>STANDARD PLAN</h4>
+                <div class="price">
+                    <p>95</p>
+                    <p class="small up">99</p>
+                    <p class="small">PLN/MSC</p>
+
+                </div>
+                <p>Zakup towaru + dowóz</p>
+                <p>Serwis</p>
+                <p>Gwarancja 5 lat</p>
+                <a href="#">DOŁĄCZ</a>
+            </div>
+            <!--ADVANCE PLAN-->
+            <div class="plan float_right">
+                <h4>ADVANCE PLAN</h4>
+                <div class="price">
+                    <p>211</p>
+                    <p class="small up">00</p>
+                    <p class="small">PLN/MSC</p>
+
+                </div>
+                <p>Zakup towaru + dowóz</p>
+                <p>Serwis</p>
+                <p>Gwarancja 5 lat</p>
+                <p>Porady projektanta</p>
+                <a href="#">DOŁĄCZ</a>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
-    </section>
+        <div class="container row">
+            <h3 class="section_title">KONTAKT</h3>
+            <form action="email@email.com" method="post">
+                <div class="float_left">
+                    <input type="text" id="name" placeholder="Imię">
+                    <input type="text" id="email" placeholder="email">
+                    <textarea id="message" placeholder="Wiadomość"></textarea>
+                </div>
+            </form>
+            <div class="float_right">
+                <img src="images/red_chair.png" alt="red_chair" class="red_chair">
+                <img src="images/form_ok.jpg" alt="form_ok">
+                <p>Zgadzam się na przetwarzanie danych osobowych</p>
+                <div class="submit_button">WYŚLIJ</div>
+            </div>
 
-    <footer></footer>
+        </div>
+    </section>
+    <footer>
+        <div class="container row">
+
+            <div class="float_left">
+                <p>
+                    Copyright 2016 | All Rights Reserved - Sit On Chair
+                </p>
+
+            </div>
+            <div class="social_media float_right">
+                <div class="icons">
+                    <img src="images/flickr.png" alt="flickr">
+                    <img src="images/vimeo.png" alt="vimeo">
+                    <img src="images/pinterest.png" alt="pinterest">
+                    <img src="images/twitter.png" alt="twitter">
+                </div>
+                <div class="logo_footer">
+                    SIT<span> ON </span>CHAIR</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
