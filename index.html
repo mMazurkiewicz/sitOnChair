@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <title>Sit on our chair</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
 <body>
@@ -17,12 +18,12 @@
             <nav>
                 <ul class="menu">
                     <div class="dropdown">
-                    <li>O FIRMIE
-                      <ul class="inner_menu">
-                        <li>Aktualności</li>
-                        <li>Nasz team</li>
-                        <li>Historia</li>
-                      </ul>
+                        <li>O FIRMIE
+                            <ul class="inner_menu">
+                                <li><a href="#">Aktualności</a></li>
+                                <li><a href="#">Nasz Team</a></li>
+                                <li><a href="#">O Nas</a></li>
+                            </ul>
                     </div>
                     </li>
                     <li>GALERIA</li>
@@ -31,16 +32,16 @@
             </nav>
         </div>
     </header>
-
+    <!-- SLIDER -->
     <section id="main">
         <div class="container row">
             <div class="ten"><span id="prevPicture">&lt;</span></div>
             <div class="fourty">
-              <ul class="slider">
-                  <li><img src="images/black_chair_2.png"></li>
-                  <li><img src="images/red_2.png"></li>
-                  <li><img src="images/orange_2.png"></li>
-              </ul>
+                <ul class="slider">
+                    <li><img src="images/black_chair_2.png"></li>
+                    <li><img src="images/red_2.png"></li>
+                    <li><img src="images/orange_2.png"></li>
+                </ul>
 
             </div>
             <div class="fourty center">
@@ -51,7 +52,7 @@
             <div class="ten right"><span id="nextPicture">&gt;</span></div>
         </div>
     </section>
-
+    <!-- PRODUCTS -->
     <section id="products">
         <div class="container row">
             <div class="box clair float_left">
@@ -69,7 +70,7 @@
             </div>
         </div>
     </section>
-
+    <!-- PRICES -->
     <section id="prices">
         <div class="container row">
             <h3 class="section_title">CENNIK</h3>
@@ -116,7 +117,7 @@
             </div>
         </div>
     </section>
-
+    <!-- CONTACT -->
     <section id="contact">
         <div class="container row">
             <h3 class="section_title">KONTAKT</h3>
@@ -126,13 +127,17 @@
                     <input type="text" id="email" placeholder="email">
                     <textarea id="message" placeholder="Wiadomość"></textarea>
                 </div>
+
+                <div class="float_right">
+                    <img src="images/red_chair.png" alt="red_chair" class="red_chair">
+                    <div class="checkbox check-box">
+                        <input type="checkbox" id="transport" data-transport-price="200">
+                        <label for="transport">Zgadzam się na przetwarzanie danych osobowych</label>
+                    </div>
+                    <input type="submit" class="submit_button" value="WYŚLIJ">
+                    <!-- <div class="submit_button">WYŚLIJ</div> -->
+                </div>
             </form>
-            <div class="float_right">
-                <img src="images/red_chair.png" alt="red_chair" class="red_chair">
-                <img src="images/form_ok.jpg" alt="form_ok">
-                <p>Zgadzam się na przetwarzanie danych osobowych</p>
-                <div class="submit_button">WYŚLIJ</div>
-            </div>
 
         </div>
     </section>
