@@ -191,6 +191,9 @@ nav {
 #nextPicture, #prevPicture {
     cursor: pointer;
 }
+#nextPicture:active, #prevPicture:active {
+    cursor: pointer;
+}
 
 .fourty h1 {
     font-size: 40px;
@@ -230,6 +233,17 @@ nav {
 .right {
     text-align: right;
     margin-left: 83px;
+}
+
+.right, .ten {
+  transition: all 0.3s;
+}
+
+.ten:active {
+  transform: scale(1.1,1.1) translateX(-4px) translateY(-6px);
+}
+.right:active {
+  transform: scale(1.1,1.1) translateX(4px) translateY(-6px);
 }
 
 
